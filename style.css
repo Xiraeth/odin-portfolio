@@ -29,6 +29,7 @@ p {
 }
 
 .aboutMe {
+  font-size: 2rem;
   display: flex;
   align-items: center;
   padding: var(--section-pad);
@@ -52,12 +53,12 @@ p {
 }
 
 .rightCard h1 {
-  font-size: 3rem;
+  font-size: 3em;
   padding-bottom: 1rem;
 }
 
 .rightCard p {
-  font-size: 2rem;
+  font-size: 1em;
   font-weight: 300;
   opacity: 0.9;
   line-height: 3rem;
@@ -86,8 +87,12 @@ p {
     width: 400px;
   }
 
-  :root {
-    font-size: 10px;
+  .aboutMe {
+    font-size: 1.5rem;
+  }
+
+  .rightCard h1 {
+    font-size: 2.5em;
   }
 }
 
@@ -98,15 +103,18 @@ p {
 
   .rightCard {
     width: 300px;
-    /* height: 100px; */
   }
 
   .aboutMe img {
     width: 300px;
   }
 
-  :root {
-    font-size: 8px;
+  .aboutMe {
+    font-size: 1rem;
+  }
+
+  .rightCard h1 {
+    font-size: 2em;
   }
 }
 
@@ -208,13 +216,14 @@ p {
 
 @media screen and (min-width: 2500px) {
   .projectCard {
-    width: 700px;
+    width: 600px;
   }
 }
 
 @media screen and (min-width: 3000px) {
   .projectCard {
     width: 1000px;
+    height: 600px;
   }
 
   :root {
@@ -243,4 +252,38 @@ p {
 
 .contact .links {
   display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+  .contact img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact img {
+    width: 250px;
+  }
+
+  .contact .leftSide {
+    width: 250px;
+    margin-bottom: 1em;
+  }
+
+  .contact {
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .contact {
+    font-size: 3rem;
+  }
+
+  .contact img {
+    width: 1200px;
+  }
 }
