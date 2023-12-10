@@ -119,3 +119,46 @@ p {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
+
+.projectCard {
+  min-height: 500px;
+  width: 500px;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 3px 3px 12px 2px rgba(0, 0, 0, 0.5);
+}
+
+.projectCard img {
+  width: 100%;
+  height: 300px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 2rem;
+}
+
+.info {
+  padding: 1rem 2rem;
+}
+
+.title-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-links i {
+  color: crimson;
+  font-size: 2rem;
+}
+
+.title-links i:hover {
+  opacity: 0.8;
+}
+
+.projectCard .description {
+  text-align: left;
+  margin-top: 1rem;
+}
