@@ -4,6 +4,8 @@
 
 :root {
   font-size: 16px;
+  --section-pad: 2rem 7rem;
+  --bg-main-color: rgb(238, 210, 165);
 }
 
 * {
@@ -14,11 +16,12 @@
 
 body {
   min-height: 100vh;
-  background-color: rgb(240, 219, 163);
+  background-color: var(--bg-main-color);
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Merriweather", serif;
 }
 
 div,
@@ -29,7 +32,7 @@ p {
 .aboutMe {
   display: flex;
   align-items: center;
-  padding: 2rem 7rem;
+  padding: var(--section-pad);
   position: relative;
   z-index: 2;
 }
@@ -56,6 +59,7 @@ p {
   font-size: 2rem;
   font-weight: 300;
   opacity: 0.9;
+  line-height: 3rem;
 }
 
 .links {
@@ -74,4 +78,44 @@ p {
 
 .links i:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 1300px) {
+  .aboutMe img {
+    width: 400px;
+  }
+
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutMe {
+    flex-direction: column;
+  }
+
+  .rightCard {
+    width: 300px;
+    /* height: 100px; */
+  }
+
+  .aboutMe img {
+    width: 300px;
+  }
+
+  :root {
+    font-size: 8px;
+  }
+}
+
+.projects {
+  margin-top: 10rem;
+  padding: var(--section-pad);
+}
+
+.projects h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
